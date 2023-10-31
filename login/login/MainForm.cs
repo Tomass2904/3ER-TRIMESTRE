@@ -1,21 +1,11 @@
-﻿/*
- * Created by SharpDevelop.
- * User: Lab-01
- * Date: 09/10/2023
- * Time: 20:48
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
- */
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
 namespace login
 {
-	/// <summary>
-	/// Description of MainForm.
-	/// </summary>
+
 	public partial class MainForm : Form
 	{
 		ClassConexionSQL miConexion;
@@ -37,6 +27,9 @@ namespace login
 		{
 			if (miConexion.ValidarUsuario(txt_usu.Text,txt_pass.Text)){
 				MessageBox.Show("ok");
+				FormAlumno frmalumno = new FormAlumno();
+				frmalumno.Show();
+				this.Hide();
 			}else{
 				MessageBox.Show("Datos erroneos");
 			}

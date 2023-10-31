@@ -62,9 +62,8 @@ namespace login
 			this.btn_eliminar.Name = "btn_eliminar";
 			this.btn_eliminar.Size = new System.Drawing.Size(75, 23);
 			this.btn_eliminar.TabIndex = 2;
-			this.btn_eliminar.Text = "+";
+			this.btn_eliminar.Text = "ELIMINAR";
 			this.btn_eliminar.UseVisualStyleBackColor = true;
-			this.btn_eliminar.Click += new System.EventHandler(this.Button3Click);
 			// 
 			// btn_modificar
 			// 
@@ -83,6 +82,7 @@ namespace login
 			this.btn_ingresar.TabIndex = 0;
 			this.btn_ingresar.Text = "INGRESAR";
 			this.btn_ingresar.UseVisualStyleBackColor = true;
+			this.btn_ingresar.Click += new System.EventHandler(this.Btn_ingresarClick);
 			// 
 			// gridDatos
 			// 
