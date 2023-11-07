@@ -1,0 +1,8 @@
+C:\Users\Lab-01\Documents\SharpDevelop Projects\resto\resto\bin\Debug\resto.exe
+C:\Users\Lab-01\Documents\SharpDevelop Projects\resto\resto\bin\Debug\resto.pdb
+C:\Users\Lab-01\Documents\SharpDevelop Projects\resto\resto\obj\Debug\resto.csprojResolveAssemblyReference.cache
+C:\Users\Lab-01\Documents\SharpDevelop Projects\resto\resto\obj\Debug\resto.exe
+C:\Users\Lab-01\Documents\SharpDevelop Projects\resto\resto\obj\Debug\resto.pdb
+C:\Users\Lab-01\Documents\SharpDevelop Projects\resto\resto\obj\Debug\resto.FormCARGAR.resources
+C:\Users\Lab-01\Documents\SharpDevelop Projects\resto\resto\obj\Debug\resto.MainForm.resources
+C:\Users\Lab-01\Documents\SharpDevelop Projects\resto\resto\obj\Debug\resto.csproj.GenerateResource.Cache
