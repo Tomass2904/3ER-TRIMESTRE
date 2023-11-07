@@ -52,7 +52,13 @@ namespace login
 		}
 		void Btn_modificarClick(object sender, EventArgs e)
 		{
-			miConexion.EjecutarSentencia(string.Format("exec SP_Actualizar_Alumnos {0},{1},{2},{3},{4}",txt_nombre.Text, txt_apellido.Text, txt_dni.Text, txt_edad.Text, txt_email.Text));
+			miConexion.EjecutarSentencia(string.Format("exec SP_Actualizar_Alumnos '{0}','{1}','{2}',{3},'{4}'",txt_nombre.Text, txt_apellido.Text, txt_dni.Text, txt_edad.Text, txt_email.Text));
+		}
+		
+		void Btn_cancelarClick(object sender, EventArgs e)
+		{
+			this.Close();
+			
 		}
 	}
 }

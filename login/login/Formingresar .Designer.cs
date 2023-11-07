@@ -47,6 +47,7 @@ namespace login
 			this.txt_edad = new System.Windows.Forms.TextBox();
 			this.txt_email = new System.Windows.Forms.TextBox();
 			this.btn_ingresar = new System.Windows.Forms.Button();
+			this.btn_cancelar = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lbl_nombre
@@ -134,11 +135,22 @@ namespace login
 			this.btn_ingresar.UseVisualStyleBackColor = true;
 			this.btn_ingresar.Click += new System.EventHandler(this.Btn_ingresarClick);
 			// 
+			// btn_cancelar
+			// 
+			this.btn_cancelar.Location = new System.Drawing.Point(394, 335);
+			this.btn_cancelar.Name = "btn_cancelar";
+			this.btn_cancelar.Size = new System.Drawing.Size(75, 23);
+			this.btn_cancelar.TabIndex = 11;
+			this.btn_cancelar.Text = "CANCELAR";
+			this.btn_cancelar.UseVisualStyleBackColor = true;
+			this.btn_cancelar.Click += new System.EventHandler(this.Btn_cancelarClick);
+			// 
 			// Formingresar
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(638, 468);
+			this.Controls.Add(this.btn_cancelar);
 			this.Controls.Add(this.btn_ingresar);
 			this.Controls.Add(this.txt_email);
 			this.Controls.Add(this.txt_edad);
@@ -156,6 +168,7 @@ namespace login
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btn_cancelar;
 		private System.Windows.Forms.Button btn_ingresar;
 		private System.Windows.Forms.TextBox txt_email;
 		private System.Windows.Forms.TextBox txt_edad;
