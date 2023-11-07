@@ -64,6 +64,7 @@ namespace login
 			this.btn_eliminar.TabIndex = 2;
 			this.btn_eliminar.Text = "ELIMINAR";
 			this.btn_eliminar.UseVisualStyleBackColor = true;
+			this.btn_eliminar.Click += new System.EventHandler(this.Btn_eliminarClick);
 			// 
 			// btn_modificar
 			// 
@@ -73,6 +74,7 @@ namespace login
 			this.btn_modificar.TabIndex = 1;
 			this.btn_modificar.Text = "MODIFICAR";
 			this.btn_modificar.UseVisualStyleBackColor = true;
+			this.btn_modificar.Click += new System.EventHandler(this.Btn_modificarClick);
 			// 
 			// btn_ingresar
 			// 
@@ -93,6 +95,7 @@ namespace login
 			this.gridDatos.Location = new System.Drawing.Point(0, 50);
 			this.gridDatos.Name = "gridDatos";
 			this.gridDatos.ReadOnly = true;
+			this.gridDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.gridDatos.Size = new System.Drawing.Size(889, 440);
 			this.gridDatos.TabIndex = 2;
 			// 

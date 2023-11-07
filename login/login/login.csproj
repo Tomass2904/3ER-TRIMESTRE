@@ -47,10 +47,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassAlumno.cs" />
     <Compile Include="ClassConexion.cs" />
     <Compile Include="FormAlumno.cs" />
     <Compile Include="FormAlumno.Designer.cs">
       <DependentUpon>FormAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formingresar .cs" />
+    <Compile Include="Formingresar .Designer.cs">
+      <DependentUpon>Formingresar .cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs" />
     <Compile Include="MainForm.Designer.cs">
@@ -62,6 +67,9 @@
   <ItemGroup>
     <EmbeddedResource Include="FormAlumno.resx">
       <DependentUpon>FormAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formingresar .resx">
+      <DependentUpon>Formingresar .cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

@@ -13,3 +13,4 @@ C:\Users\Lab-01\Downloads\3ER-TRIMESTRE-main\login\login\obj\Debug\login.csproj.
 C:\Users\Lab-01\Downloads\3ER-TRIMESTRE-main\login\login\obj\Debug\login.exe
 C:\Users\Lab-01\Downloads\3ER-TRIMESTRE-main\login\login\obj\Debug\login.pdb
 C:\Users\Lab-01\Downloads\3ER-TRIMESTRE-main\login\login\obj\Debug\login.FormAlumno.resources
+C:\Users\Lab-01\Downloads\3ER-TRIMESTRE-main\login\login\obj\Debug\login.Formingresar.resources

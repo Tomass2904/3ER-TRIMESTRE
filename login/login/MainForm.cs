@@ -26,13 +26,20 @@ namespace login
 		void Btn_loginClick(object sender, EventArgs e)
 		{
 			if (miConexion.ValidarUsuario(txt_usu.Text,txt_pass.Text)){
-				MessageBox.Show("ok");
+				//MessageBox.Show("ok");
 				FormAlumno frmalumno = new FormAlumno();
 				frmalumno.Show();
 				this.Hide();
 			}else{
 				MessageBox.Show("Datos erroneos");
 			}
+		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+				FormAlumno frmalumno = new FormAlumno();
+				frmalumno.Show();
+				this.Hide();			
 		}
 	}
 }
