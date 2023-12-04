@@ -52,6 +52,10 @@
     <Compile Include="FormCARGAR.Designer.cs">
       <DependentUpon>FormCARGAR.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlogin.cs" />
+    <Compile Include="Formlogin.Designer.cs">
+      <DependentUpon>Formlogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formproductos.cs" />
     <Compile Include="Formproductos.Designer.cs">
       <DependentUpon>Formproductos.cs</DependentUpon>
@@ -67,6 +71,9 @@
   <ItemGroup>
     <EmbeddedResource Include="FormCARGAR.resx">
       <DependentUpon>FormCARGAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlogin.resx">
+      <DependentUpon>Formlogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formproductos.resx">
       <DependentUpon>Formproductos.cs</DependentUpon>

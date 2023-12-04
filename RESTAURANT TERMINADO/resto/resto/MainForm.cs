@@ -19,6 +19,8 @@ namespace resto
 		}
 		void MainFormLoad(object sender, EventArgs e)
 		{
+			Formlogin formlog = new Formlogin();
+			formlog.ShowDialog();
 			grid_prod_mesas.AutoGenerateColumns=false;
 			miConexion = new ClassConexionSQL();
 			miConexion.CrearConexion();
