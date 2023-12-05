@@ -101,6 +101,7 @@ namespace resto
 			this.Controls.Add(this.lbl_pass);
 			this.Controls.Add(this.lbl_usuario);
 			this.Name = "Formlogin";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Formlogin";
 			this.Load += new System.EventHandler(this.FormloginLoad);
 			this.ResumeLayout(false);

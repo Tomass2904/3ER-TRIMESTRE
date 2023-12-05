@@ -25,6 +25,7 @@ namespace resto
 			miConexion.CrearConexion();
 			CargarGrilla();
 			txt_cantidad.Text = "1";
+			
 		}
 		private void GridProd_SelectionChanged(object sender, EventArgs e)
 		{
@@ -75,18 +76,42 @@ namespace resto
 		}
 		void Btn_cargarClick(object sender, EventArgs e)
 		{
-			Producto objprod = new Producto();
-			objprod.ProdId 		= int.Parse(grid_prod.SelectedRows[0].Cells["prod_id"].Value.ToString());
-			objprod.ProdNombre 	= grid_prod.SelectedRows[0].Cells["prod_nombre"].Value.ToString();
-			objprod.ProdPrecio = float.Parse(grid_prod.SelectedRows[0].Cells["prod_precio"].Value.ToString());
-			objprod.ProdNumero 		= int.Parse(grid_prod.SelectedRows[0].Cells["prod_numero"].Value.ToString());
-			string prod_id = grid_prod.SelectedRows[0].Cells["prod_id"].Value.ToString();
-			miConexion.EjecutarSentencia(string.Format("exec SP_insertar_mesa_prod {0},'{1}','{2}',{3}", mesa_id,prod_id, txt_precio.Text, txt_cantidad.Text));
+			decimal cantidad = Convert.ToDecimal(txt_cantidad.Text);
+			decimal precio = Convert.ToDecimal(txt_precio.Text);
+			if (cantidad > 0 && precio > 0)
+			{
+				Producto objprod = new Producto();
+				objprod.ProdId 		= int.Parse(grid_prod.SelectedRows[0].Cells["prod_id"].Value.ToString());
+				objprod.ProdNombre 	= grid_prod.SelectedRows[0].Cells["prod_nombre"].Value.ToString();
+				objprod.ProdPrecio = float.Parse(grid_prod.SelectedRows[0].Cells["prod_precio"].Value.ToString());
+				objprod.ProdNumero 		= int.Parse(grid_prod.SelectedRows[0].Cells["prod_numero"].Value.ToString());
+				string prod_id = grid_prod.SelectedRows[0].Cells["prod_id"].Value.ToString();
+				miConexion.EjecutarSentencia(string.Format("exec SP_insertar_mesa_prod {0},'{1}','{2}',{3}", mesa_id,prod_id, txt_precio.Text, txt_cantidad.Text));
+			}
+			else
+			{
+				// Mostrar un mensaje de error indicando que los valores no son válidos
+				MessageBox.Show("La cantidad y el precio deben ser valores positivos y mayores que cero.", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+			
+			
+			
+			
+			
+//			Producto objprod = new Producto();
+//			objprod.ProdId 		= int.Parse(grid_prod.SelectedRows[0].Cells["prod_id"].Value.ToString());
+//			objprod.ProdNombre 	= grid_prod.SelectedRows[0].Cells["prod_nombre"].Value.ToString();
+//			objprod.ProdPrecio = float.Parse(grid_prod.SelectedRows[0].Cells["prod_precio"].Value.ToString());
+//			objprod.ProdNumero 		= int.Parse(grid_prod.SelectedRows[0].Cells["prod_numero"].Value.ToString());
+//			string prod_id = grid_prod.SelectedRows[0].Cells["prod_id"].Value.ToString();
+//			miConexion.EjecutarSentencia(string.Format("exec SP_insertar_mesa_prod {0},'{1}','{2}',{3}", mesa_id,prod_id, txt_precio.Text, txt_cantidad.Text));
 		}
 		void Btn_cerrarClick(object sender, EventArgs e)
 		{
 			this.Close();
 			
 		}
+		
+		
 	}
 }

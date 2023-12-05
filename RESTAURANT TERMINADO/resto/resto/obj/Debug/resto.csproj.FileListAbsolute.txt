@@ -25,3 +25,13 @@ C:\Users\TOMAS\OneDrive\Escritorio\RESTAURANT TERMINADO\resto\resto\obj\Debug\re
 C:\Users\TOMAS\OneDrive\Escritorio\RESTAURANT TERMINADO\resto\resto\obj\Debug\resto.csproj.GenerateResource.Cache
 C:\Users\TOMAS\OneDrive\Escritorio\RESTAURANT TERMINADO\resto\resto\obj\Debug\resto.exe
 C:\Users\TOMAS\OneDrive\Escritorio\RESTAURANT TERMINADO\resto\resto\obj\Debug\resto.pdb
+C:\Users\Lab-01\Downloads\3ER-TRIMESTRE-main\RESTAURANT TERMINADO\resto\resto\bin\Debug\resto.exe
+C:\Users\Lab-01\Downloads\3ER-TRIMESTRE-main\RESTAURANT TERMINADO\resto\resto\bin\Debug\resto.pdb
+C:\Users\Lab-01\Downloads\3ER-TRIMESTRE-main\RESTAURANT TERMINADO\resto\resto\obj\Debug\resto.csprojResolveAssemblyReference.cache
+C:\Users\Lab-01\Downloads\3ER-TRIMESTRE-main\RESTAURANT TERMINADO\resto\resto\obj\Debug\resto.FormCARGAR.resources
+C:\Users\Lab-01\Downloads\3ER-TRIMESTRE-main\RESTAURANT TERMINADO\resto\resto\obj\Debug\resto.Formlogin.resources
+C:\Users\Lab-01\Downloads\3ER-TRIMESTRE-main\RESTAURANT TERMINADO\resto\resto\obj\Debug\resto.Formproductos.resources
+C:\Users\Lab-01\Downloads\3ER-TRIMESTRE-main\RESTAURANT TERMINADO\resto\resto\obj\Debug\resto.MainForm.resources
+C:\Users\Lab-01\Downloads\3ER-TRIMESTRE-main\RESTAURANT TERMINADO\resto\resto\obj\Debug\resto.csproj.GenerateResource.Cache
+C:\Users\Lab-01\Downloads\3ER-TRIMESTRE-main\RESTAURANT TERMINADO\resto\resto\obj\Debug\resto.exe
+C:\Users\Lab-01\Downloads\3ER-TRIMESTRE-main\RESTAURANT TERMINADO\resto\resto\obj\Debug\resto.pdb

@@ -32,6 +32,12 @@ namespace resto
 //			CargarGrillaMesaProd();
 			gridmesas.SelectionChanged += Gridmesas_SelectionChanged;
 			gridmesas.CellFormatting += gridmesas_CellFormatting;
+			try {
+				CalcularTotal();
+			} catch (Exception) {
+				
+				txt_total.Text="0";
+			}
 			
 			
 		}
@@ -75,6 +81,7 @@ namespace resto
 					BindingSource bsProductosMesa = new BindingSource();
 					bsProductosMesa.DataSource = dsProductosMesa.Tables[0];
 					grid_prod_mesas.DataSource = bsProductosMesa;
+					CalcularTotal();
 				}
 			}
 		}
@@ -86,7 +93,7 @@ namespace resto
 			miConexion.EjecutarSentencia(string.Format("exec sp_obtener_mesa_producto " + mesaId));
 			
 			Gridmesas_SelectionChanged(null,e);
-			
+			CalcularTotal();
 		}
 		void Btn_eliminar_prodClick(object sender, EventArgs e)
 		{
@@ -132,6 +139,7 @@ namespace resto
 			{
 				MessageBox.Show("Selecciona un producto para eliminar.");
 			}
+			CalcularTotal();
 		}
 
 		// Método para eliminar un producto por su ID
@@ -148,6 +156,29 @@ namespace resto
 				Gridmesas_SelectionChanged(null, EventArgs.Empty);
 			}
 		}
+		void CalcularTotal()
+		{
+			decimal total = 0;
+
+			// Verificar si hay filas en la grilla
+			if (grid_prod_mesas.Rows.Count > 0)
+			{
+				// Iterar a través de las filas y sumar los valores de la columna 'PRECIO'
+				foreach (DataGridViewRow row in grid_prod_mesas.Rows)
+				{
+					// Asegurarse de que la celda no esté vacía y sumar el valor a 'total'
+					if (row.Cells["colum1"].Value != null)
+					{
+						total += Convert.ToDecimal(row.Cells["colum1"].Value);
+					}
+				}
+			}
+
+			// Mostrar el total en el control txt_total
+			txt_total.Text = total.ToString();
+		}
+
+		
 	}
 }
 

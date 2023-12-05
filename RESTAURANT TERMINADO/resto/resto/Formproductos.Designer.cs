@@ -178,6 +178,7 @@ namespace resto
 			this.Controls.Add(this.grid_prod);
 			this.Controls.Add(this.panel1);
 			this.Name = "Formproductos";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Formproductos";
 			this.Load += new System.EventHandler(this.FormproductosLoad);
 			this.panel1.ResumeLayout(false);

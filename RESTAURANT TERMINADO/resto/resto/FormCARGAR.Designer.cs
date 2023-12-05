@@ -144,6 +144,7 @@ namespace resto
 			this.Controls.Add(this.lbl_capacidad);
 			this.Controls.Add(this.lbl_numero);
 			this.Name = "FormCARGAR";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FormCARGAR";
 			this.Load += new System.EventHandler(this.FormCARGARLoad);
 			this.ResumeLayout(false);

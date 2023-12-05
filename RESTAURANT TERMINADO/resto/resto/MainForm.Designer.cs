@@ -48,6 +48,8 @@ namespace resto
 			this.btn_eliminar_mesas = new System.Windows.Forms.Button();
 			this.btn_cargar_mesas = new System.Windows.Forms.Button();
 			this.grid_prod_mesas = new System.Windows.Forms.DataGridView();
+			this.txt_total = new System.Windows.Forms.TextBox();
+			this.lbl_total = new System.Windows.Forms.Label();
 			this.Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.colum = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.colum1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,6 +63,8 @@ namespace resto
 			// 
 			this.gridmesas.AllowUserToAddRows = false;
 			this.gridmesas.AllowUserToDeleteRows = false;
+			this.gridmesas.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.gridmesas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
 			this.gridmesas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			this.gridmesas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
 			this.mesa_id,
@@ -68,7 +72,7 @@ namespace resto
 			this.mesa_capacidad,
 			this.mesa_estado,
 			this.mesa_descripcion});
-			this.gridmesas.Location = new System.Drawing.Point(12, 106);
+			this.gridmesas.Location = new System.Drawing.Point(8, 106);
 			this.gridmesas.Name = "gridmesas";
 			this.gridmesas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.gridmesas.Size = new System.Drawing.Size(629, 461);
@@ -101,25 +105,29 @@ namespace resto
 			// 
 			// mesa_descripcion
 			// 
+			this.mesa_descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
 			this.mesa_descripcion.DataPropertyName = "mesa_descripcion";
 			this.mesa_descripcion.HeaderText = "DESCRIPCION";
 			this.mesa_descripcion.Name = "mesa_descripcion";
 			// 
 			// panel1
 			// 
+			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			| System.Windows.Forms.AnchorStyles.Right)));
 			this.panel1.Controls.Add(this.btn_cargar_prod);
 			this.panel1.Controls.Add(this.btn_eliminar_prod);
 			this.panel1.Controls.Add(this.btn_eliminar_mesas);
 			this.panel1.Controls.Add(this.btn_cargar_mesas);
 			this.panel1.Location = new System.Drawing.Point(0, 0);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(1392, 100);
+			this.panel1.Size = new System.Drawing.Size(1196, 100);
 			this.panel1.TabIndex = 4;
 			// 
 			// btn_cargar_prod
 			// 
+			this.btn_cargar_prod.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.btn_cargar_prod.BackColor = System.Drawing.Color.Lime;
-			this.btn_cargar_prod.Location = new System.Drawing.Point(1125, 12);
+			this.btn_cargar_prod.Location = new System.Drawing.Point(914, 12);
 			this.btn_cargar_prod.Name = "btn_cargar_prod";
 			this.btn_cargar_prod.Size = new System.Drawing.Size(117, 69);
 			this.btn_cargar_prod.TabIndex = 4;
@@ -130,8 +138,9 @@ namespace resto
 			// 
 			// btn_eliminar_prod
 			// 
+			this.btn_eliminar_prod.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.btn_eliminar_prod.BackColor = System.Drawing.Color.Red;
-			this.btn_eliminar_prod.Location = new System.Drawing.Point(1263, 12);
+			this.btn_eliminar_prod.Location = new System.Drawing.Point(1060, 12);
 			this.btn_eliminar_prod.Name = "btn_eliminar_prod";
 			this.btn_eliminar_prod.Size = new System.Drawing.Size(117, 69);
 			this.btn_eliminar_prod.TabIndex = 3;
@@ -166,38 +175,63 @@ namespace resto
 			this.grid_prod_mesas.AllowUserToAddRows = false;
 			this.grid_prod_mesas.AllowUserToDeleteRows = false;
 			this.grid_prod_mesas.AllowUserToOrderColumns = true;
+			this.grid_prod_mesas.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.grid_prod_mesas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
 			this.grid_prod_mesas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			this.grid_prod_mesas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
 			this.Column,
 			this.colum,
 			this.colum1,
 			this.column12});
-			this.grid_prod_mesas.Location = new System.Drawing.Point(739, 106);
+			this.grid_prod_mesas.GridColor = System.Drawing.Color.White;
+			this.grid_prod_mesas.Location = new System.Drawing.Point(756, 106);
 			this.grid_prod_mesas.Name = "grid_prod_mesas";
 			this.grid_prod_mesas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.grid_prod_mesas.Size = new System.Drawing.Size(653, 461);
+			this.grid_prod_mesas.Size = new System.Drawing.Size(358, 461);
 			this.grid_prod_mesas.TabIndex = 3;
+			// 
+			// txt_total
+			// 
+			this.txt_total.Location = new System.Drawing.Point(971, 592);
+			this.txt_total.Name = "txt_total";
+			this.txt_total.Size = new System.Drawing.Size(100, 20);
+			this.txt_total.TabIndex = 5;
+			// 
+			// lbl_total
+			// 
+			this.lbl_total.Location = new System.Drawing.Point(791, 592);
+			this.lbl_total.Name = "lbl_total";
+			this.lbl_total.Size = new System.Drawing.Size(100, 23);
+			this.lbl_total.TabIndex = 6;
+			this.lbl_total.Text = "Total";
 			// 
 			// Column
 			// 
+			this.Column.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
 			this.Column.DataPropertyName = "mepr_id";
 			this.Column.HeaderText = "ID";
 			this.Column.Name = "Column";
+			this.Column.Width = 43;
 			// 
 			// colum
 			// 
+			this.colum.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
 			this.colum.DataPropertyName = "prod_nombre";
 			this.colum.HeaderText = "NOMBRE";
 			this.colum.Name = "colum";
+			this.colum.Width = 79;
 			// 
 			// colum1
 			// 
+			this.colum1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
 			this.colum1.DataPropertyName = "prod_precio";
 			this.colum1.HeaderText = "PRECIO";
 			this.colum1.Name = "colum1";
+			this.colum1.Width = 72;
 			// 
 			// column12
 			// 
+			this.column12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
 			this.column12.DataPropertyName = "mepr_cantidad";
 			this.column12.HeaderText = "CANTIDAD";
 			this.column12.Name = "column12";
@@ -207,17 +241,21 @@ namespace resto
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-			this.ClientSize = new System.Drawing.Size(1421, 624);
+			this.ClientSize = new System.Drawing.Size(1225, 624);
+			this.Controls.Add(this.lbl_total);
+			this.Controls.Add(this.txt_total);
 			this.Controls.Add(this.grid_prod_mesas);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.gridmesas);
 			this.Name = "MainForm";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "resto";
 			this.Load += new System.EventHandler(this.MainFormLoad);
 			((System.ComponentModel.ISupportInitialize)(this.gridmesas)).EndInit();
 			this.panel1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.grid_prod_mesas)).EndInit();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 		private System.Windows.Forms.DataGridView gridmesas;
@@ -237,9 +275,13 @@ namespace resto
 		private System.Windows.Forms.DataGridViewTextBoxColumn colum;
 		private System.Windows.Forms.DataGridViewTextBoxColumn colum1;
 		private System.Windows.Forms.DataGridViewTextBoxColumn column12;
-		}
-	
-	
-		
+		private System.Windows.Forms.TextBox txt_total;
+		private System.Windows.Forms.Label lbl_total;
 	}
+	
+}
+
+
+
+
 
